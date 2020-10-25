@@ -2,7 +2,7 @@ const mysql = require("mysql");
 const dbConfig = require("../config/db.config.js");
 
 // Create a connection to the database
-const connection = null;
+let connection = null;
 
 if (process.env.JAWSDB_URL) {
     connection = mysql.createConnection(process.env.JAWSDB_URL);
