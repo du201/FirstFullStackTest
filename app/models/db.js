@@ -17,7 +17,6 @@ if (process.env.JAWSDB_URL) {
     });
 }
 
-var PORT = process.env.PORT || 8000;
 
 // open the MySQL connection
 connection.connect(error => {
